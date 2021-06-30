@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wishlist Pro - a code documentation page for users</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/scribbler-global.css" />
+    <link rel="stylesheet" href="./assets/css/scribbler-doc.css" />
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Get Started</li>
+          <li class="js-btn">Configuration</li>
+          <li class="js-btn">Header Menu</li>
+          <li class="js-btn">Collection Page</li>
+          <li class="js-btn">Snippet Install</li>
+          <p>Others Configuration</p>
+          <li class="js-btn">Product Page</li>
+          <li class="js-btn">Wishlist Page Code</li>
+          <li class="js-btn">Create Page</li>
+          <li class="js-btn">Issues</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Get Started</h3>
+          <p>
+            Learn how to configure settings for Wishlist Pro App, such as your
+            syntax highlighting preference and the default saving folder
+            location.
+          </p>
+          <h3 class="section__title">Installation</h3>
+          <p>
+            You can easily configure your app code with your theme. This
+            documentation is to help you regarding each step of customization.
+            Please go through the documentation carefully to understand how this
+            template is made and how to edit this properly. HTML and CSS
+            knowledge is not required to customize this template. You may learn
+            basics
+            <a
+              href="https://www.w3schools.com/html/default.asp"
+              target="_blank"
+              class="a__link"
+              >here</a
+            >
+            also.
+          </p>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Required Configuration</h3>
+          <p>
+            Learn how to configure some settings for Wishlist Pro App. You have
+            to do some option manually for better user expereience. Please
+            follow the properly. <b>This Configuration is required.</b>
+          </p>
+          <table id="customers">
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Default</th>
+            </tr>
+            <tr>
+              <td>Header Menu</td>
+              <td>
+                Header menu part is manual proccess. If you want to turned on,
+                it requires to place the code in header.liquid file.
+              </td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Collection Page</td>
+              <td>
+                Render the wishlist button on collection page then you have to
+                do it manually. If you don't want to use the feature then you
+                can leave it.
+              </td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Snippet Install</td>
+              <td>
+                For Installation all the snippet, you have to got to the app
+                dashboard just click on configure app menu. After that click on
+                install snippet.
+              </td>
+              <td>false</td>
+            </tr>
+          </table>
+        </section>
+        <section class="js-section">
+          <div class="header_menu">
+            <h3 class="subsection_title">01. Header Menu Icon</h3>
+            <p>
+              You can see the preview from bellow screenshot and just copy and
+              paste the code. Note:
+              <strong
+                >Please copy the code and go to the header.liquid section
+                template and just paste it.</strong
+              >
+            </p>
+            <div class="images_flex">
+              <div class="col-8">
+                <p><strong>Code Preview</strong></p>
+                <img
+                  src="./assets/images/Header-Mneu.png"
+                  class="ls__images__two"
+                  alt="header-code"
+                />
+              </div>
+              <div class="col-4">
+                <p><strong>UI Preview</strong></p>
+                <img
+                  src="./assets/images/Header-UI.png"
+                  class="ls__images__two"
+                  width="400px"
+                  height="300px"
+                  alt="header-ui"
+                />
+              </div>
+            </div>
+            <div class="code__block code__block--notabs">
+              <pre class="code code--block">
+                <code>
+                  &lt;a&nbsp;href=&quot;/pages/wishlist&#45;pro&quot;&nbsp;class=&quot;site&#45;header__icon&nbsp;ls__site&#45;header__wishlist&quot;&nbsp;data&#45;customer=&quot;{{&nbsp;customer.id&nbsp;}}&quot;&gt;
+                  &nbsp;&nbsp;&lt;span&nbsp;class=&quot;ls__heart_reqular&quot;&gt;&lt;i&nbsp;class=&quot;far&nbsp;fa&#45;heart&nbsp;heart__menu&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                  &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ls__site&#45;header__wishlist&#45;count&quot;&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;ls__wishlist__count&quot;&gt;&lt;/span&gt;
+                  &nbsp;&nbsp;&lt;/div&gt;
+                  &lt;/a&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+        <section class="js-section">
+          <div class="header_menu">
+            <h3 class="subsection_title">02. Collection Page Button</h3>
+            <p>
+              You can see the preview from bellow screenshot and just copy and
+              paste the code. Note:
+              <strong
+                >Please copy the code and go to the product-card-grid.liquid
+                snippet template and just paste it, after the close main
+                div.</strong
+              >
+            </p>
+            <div class="images_flex">
+              <div class="col-8">
+                <p><strong>Code Preview</strong></p>
+                <img
+                  src="./assets/images/Collection-button.png"
+                  class="ls__images__two"
+                  alt="header-code"
+                />
+              </div>
+              <div class="col-4">
+                <p><strong>UI Preview</strong></p>
+                <img
+                  src="./assets/images/Collection-UI.png"
+                  class="ls__images__two"
+                  width="400px"
+                  height="300px"
+                  alt="header-ui"
+                />
+              </div>
+            </div>
+            <div class="code__block code__block--notabs">
+              <pre class="code code--block">
+                <code>
+                  &lt;!&#45;&#45;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don&#39;t&nbsp;Remove&nbsp;Any&nbsp;Code&nbsp;From&nbsp;Here&nbsp;&#45;&nbsp;START&nbsp;|&nbsp;You&nbsp;can&nbsp;do&nbsp;css&nbsp;use&nbsp;our&nbsp;classes&nbsp;&#45;&#45;&gt;
+                  &lt;div&nbsp;class=&quot;ls__product__wishlist_grid&quot;&nbsp;data&#45;customer=&quot;{{&nbsp;customer.id&nbsp;}}&quot;&gt;
+                  &nbsp;&nbsp;&lt;button&nbsp;class=&quot;ls&#45;mobile__wishlist&#45;button&quot;&nbsp;style=&quot;display:&nbsp;none;&quot;&nbsp;data&#45;product=&quot;{{&nbsp;product.id&nbsp;}}&quot;&nbsp;data&#45;variant=&quot;{{&nbsp;product.variants.first.id&nbsp;}}&quot;&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;far&nbsp;fa&#45;heart&nbsp;ls&#45;wishlist&#45;mb&nbsp;added&quot;&gt;&lt;/i&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fas&nbsp;fa&#45;heart&nbsp;ls&#45;wishlist&#45;mb&nbsp;removed&quot;&gt;&lt;/i&gt;
+                  &nbsp;&nbsp;&lt;/button&gt;
+                  &lt;/div&gt;
+                  &lt;!&#45;&#45;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don&#39;t&nbsp;Remove&nbsp;Any&nbsp;Code&nbsp;From&nbsp;Here&nbsp;&#45;&nbsp;END&nbsp;|&nbsp;You&nbsp;can&nbsp;do&nbsp;css&nbsp;use&nbsp;our&nbsp;classes&nbsp;&#45;&#45;&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+        <section class="js-section">
+          <div class="header_menu">
+            <h3 class="subsection_title">03. Snippet Install</h3>
+            <p>
+              You can see the preview from bellow screenshot. Note:
+              <strong
+                >Please got to the app dashboard just click on configure app
+                menu. After that click on install snippet. All snippet file will
+                be cofigure with your theme.</strong
+              >
+            </p>
+            <div class="images">
+              <p><strong>Settings Preview</strong></p>
+              <img
+                src="./assets/images/Snippet-Install.png"
+                class="ls__images__two"
+                width="100%"
+                alt="header-code"
+              />
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="js-section">
+          <h3 class="section__title">Other Configuration</h3>
+          <p style="color: tomato">
+            <strong
+              >Note: Bellow the all configuration will be generate automatically
+              after the install snippet from app dashboard. If any configuration
+              was not worked. Then You can do it manually.</strong
+            >
+          </p>
+          <div class="product_page">
+            <h3 class="subsection_title">04. Product Page Button</h3>
+            <p>
+              You can see the preview from bellow screenshot and just copy and
+              paste the code. Note:
+              <strong
+                >Please copy the code and go to the
+                Sections/product-template-grid.liquid section template and just
+                paste it, after the close form '{% endform %}'.</strong
+              >
+            </p>
+            <div class="images_flex">
+              <div class="col-8">
+                <p><strong>Code Preview</strong></p>
+                <img
+                  src="./assets/images/Product-Button.png"
+                  class="ls__images__two"
+                  alt="header-code"
+                />
+              </div>
+              <div class="col-4">
+                <p><strong>UI Preview</strong></p>
+                <img
+                  src="./assets/images/Product-Button-UI.png"
+                  class="ls__images__two"
+                  width="400px"
+                  height="300px"
+                  alt="header-ui"
+                />
+              </div>
+            </div>
+            <div class="code__block code__block--notabs">
+              <pre class="code code--block">
+                <code>
+                  {% include 'lrs-wishlist-app' %}
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+        <section class="js-section">
+          <div class="page_settings">
+            <h3 class="subsection_title">05. Wishlist Page Setup</h3>
+            <p>
+              You can see the preview from bellow screenshot and just copy and
+              paste the code. Note:
+              <strong
+                >Please copy the code and go to the Templates folder and create
+                a page template ls-wishlist-pro.liquid and just paste
+                it.</strong
+              >
+            </p>
+            <div class="images">
+              <p><strong>Template Code Preview</strong></p>
+              <img
+                src="./assets/images/Page-Code.png"
+                class="ls__images__two"
+                width="100%"
+                alt="header-code"
+              />
+            </div>
+            <div class="code__block code__block--notabs">
+              <pre class="code code--block">
+                <code>
+                  &lt;div&nbsp;class=&quot;page&#45;width&quot;&gt;
+                  &nbsp;&nbsp;&lt;div&nbsp;class=&quot;main__app__container&quot;&nbsp;data&#45;customer=&quot;{{&nbsp;customer.id&nbsp;}}&quot;&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;{%&nbsp;if&nbsp;customer.id&nbsp;%}
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id=&quot;app__ls__mini_wishlist&quot;&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ls&#45;&#45;loader&#45;&#45;container&quot;&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ls&#45;&#45;loader&quot;&gt;&lt;/div&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                  &nbsp;&nbsp;	&lt;/div&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;{%&nbsp;else&nbsp;%}
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card&quot;&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;You&nbsp;have&nbsp;login&nbsp;for&nbsp;access&nbsp;your&nbsp;wishlist&nbsp;product!&lt;/h2&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&quot;{{&nbsp;routes.account_login_url&nbsp;}}&quot;&nbsp;class=&quot;ls&#45;&#45;blue&#45;&#45;btn&quot;&gt;LOGIN&lt;/a&gt;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                  &nbsp;&nbsp;{%&nbsp;endif&nbsp;%}
+                  &nbsp;&nbsp;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;style&gt;
+                  &nbsp;&nbsp;.section&#45;header&nbsp;{
+                  &nbsp;&nbsp;&nbsp;&nbsp;margin&#45;bottom:&nbsp;25px;
+                  &nbsp;&nbsp;}
+                  &nbsp;&nbsp;.ls&#45;&#45;loader&#45;&#45;container&nbsp;{
+                  &nbsp;&nbsp;&nbsp;&nbsp;min&#45;height:&nbsp;400px;
+                  &nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;flex;
+                  &nbsp;&nbsp;&nbsp;&nbsp;justify&#45;content:&nbsp;center;
+                  &nbsp;&nbsp;&nbsp;&nbsp;align&#45;items:&nbsp;center;
+                  &nbsp;&nbsp;}
+                  &nbsp;&nbsp;.ls&#45;&#45;loader&nbsp;{
+                  &nbsp;&nbsp;&nbsp;&nbsp;border:&nbsp;5px&nbsp;solid&nbsp;#003680;
+                  &nbsp;&nbsp;&nbsp;&nbsp;border&#45;radius:&nbsp;50%;
+                  &nbsp;&nbsp;&nbsp;&nbsp;border&#45;top:&nbsp;5px&nbsp;solid&nbsp;#3498db;
+                  &nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;40px;
+                  &nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;40px;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&#45;webkit&#45;animation:&nbsp;spin&nbsp;2s&nbsp;linear&nbsp;infinite;&nbsp;/*&nbsp;Safari&nbsp;*/
+                  &nbsp;&nbsp;&nbsp;&nbsp;animation:&nbsp;spin&nbsp;2s&nbsp;linear&nbsp;infinite;
+                  &nbsp;&nbsp;}
+
+                  &nbsp;&nbsp;/*&nbsp;Safari&nbsp;*/
+                  &nbsp;&nbsp;@&#45;webkit&#45;keyframes&nbsp;spin&nbsp;{
+                  &nbsp;&nbsp;&nbsp;&nbsp;0%&nbsp;{&nbsp;&#45;webkit&#45;transform:&nbsp;rotate(0deg);&nbsp;}
+                  &nbsp;&nbsp;&nbsp;&nbsp;100%&nbsp;{&nbsp;&#45;webkit&#45;transform:&nbsp;rotate(360deg);&nbsp;}
+                  &nbsp;&nbsp;}
+
+                  &nbsp;&nbsp;@keyframes&nbsp;spin&nbsp;{
+                  &nbsp;&nbsp;&nbsp;&nbsp;0%&nbsp;{&nbsp;transform:&nbsp;rotate(0deg);&nbsp;}
+                  &nbsp;&nbsp;&nbsp;&nbsp;100%&nbsp;{&nbsp;transform:&nbsp;rotate(360deg);&nbsp;}
+                  &nbsp;&nbsp;}
+                  &lt;/style&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+        <section class="js-section">
+          <div class="page_create">
+            <h3 class="subsection_title">06. Create Page</h3>
+            <p>
+              You can see the preview from bellow screenshot. Note:
+              <strong
+                >Please got to the Online Store Menu -> Pages Menu -> Add page
+                button then create a new page with "Wishlist Pro" Title and
+                Important Note:
+                <italic style="color: tomato"
+                  >SELECT ls-wishlist-pro THEME TEMPLATE</italic
+                >
+                then just publish or save your page.</strong
+              >
+            </p>
+            <div class="images">
+              <p><strong>Page Preview</strong></p>
+              <img
+                src="./assets/images/Page-UI.png"
+                class="ls__images__two"
+                width="100%"
+                alt="header-code"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Issues</h3>
+          <p>
+            If you have any issues just contact with us 24/7 via email. Our
+            email address is: limonrana515@gmail.com
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">
+      Wishlist pro app documentation by
+      <a
+        href="https:////websoftking.com"
+        target="_blank"
+        class="link link--light"
+        >Web Soft King</a
+      >.
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="./assets/js/scribbler.js"></script>
+  </body>
+</html>
