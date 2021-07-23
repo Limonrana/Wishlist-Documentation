@@ -5,14 +5,48 @@
         <base target="_top">
 
         <title>Redirecting...</title>
-
+        
+        <style>
+            main.container {
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+            section.hero.is-warning {
+              height: 35%;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+        </style>
+        
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function () {
                 var redirectUrl = "https://support.websoftking.com/wishlist-pro-documentation";
-                window.location.href = redirectUrl;
+//                 window.location.href = redirectUrl;
             });
         </script>
     </head>
     <body>
+        <main class="container" role="main">
+            <section class="hero is-warning">
+            <div class="hero-body">
+              <p class="title">
+                WISHLIST PRO
+              </p>
+              <p class="subtitle">
+                Click below button for open new documentation.
+              </p>
+              <article class="message is-warning">
+                <div class="message-body">
+                  Note: If your window is automatically not redirecting then please click the below button.
+                </div>
+                  <a href="https://support.websoftking.com/wishlist-pro-documentation" class="btn btn-docs">OPEN NEW DOCUMENTATION</a>
+              </article>
+            </div>
+          </section>
+       </main>
     </body>
 </html>
